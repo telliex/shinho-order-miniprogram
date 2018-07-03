@@ -13,4 +13,9 @@
 1. 注册小程序微信工作平台
 2. 设置appid
 3. 将自己的微信行添加远程调试权限
-Established a smooth and automated development environment,identify bottlenecks and defects in the development process  and reduce errors.
+
+微信小程序需要在后台添加开发者和体验者
+
+开发者：增加开发人员的，开发人员添加后，可上传代码，最多10个人，可以删除
+
+体验者：添加为体验者，管理员发布体验版本后，通过扫码二维码可以下载体验版小程序，最多20个人，添加人后是可以删除的
