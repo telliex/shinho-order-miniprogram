@@ -19,3 +19,6 @@
 开发者：增加开发人员的，开发人员添加后，可上传代码，最多10个人，可以删除
 
 体验者：添加为体验者，管理员发布体验版本后，通过扫码二维码可以下载体验版小程序，最多20个人，添加人后是可以删除的
+
+[API请求](https://developers.weixin.qq.com/miniprogram/dev/api/network-request.html)
+[生命周期]()
