@@ -10,7 +10,12 @@
 * IED -> nwjs
 
 
-UI组件库 iView Weapp
+* [iView Weapp]() UI组件库 
+* [wepy-com-swiper]() swiper
+* [easy-mock](https://easy-mock.com/) 创建 api
+* [onfire](https://github.com/hustcc/onfire.js) 跳页传值
 
 
-wepy-com-swiper
+### 参考
+* [仿coco点餐系统的微信小程序](https://github.com/lpbird/imitate-coco-xcx)
+
