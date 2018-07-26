@@ -67,6 +67,28 @@ https://hacpai.com/article/1523346638650
 
 
 
+### 标签
+```
+ <block wx:if="{{item.type == 'SWIPER'}}">
+    <SwiperBar />
+ </block>
+```
+
+```
+ <repeat for="{{components}}" key="index" index="index" item="item">
+    <SwiperBar />
+ </repeat>
+```
+
+### 小程序原生 
+```
+<view class='cart-list-box' wx:for="{{cartList}}" wx:key="unique" wx:for-item="items" wx:for-index="indexs">
+```
+
+
+
+
+
 
 * 当值默认为auto时，以此元素设置的尺寸为准，若也是auto，则以内容content尺寸为准
 * 当flex-basis设置了值时，以此设置尺寸的为准

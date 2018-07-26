@@ -25,3 +25,5 @@
 
 [API请求](https://developers.weixin.qq.com/miniprogram/dev/api/network-request.html)
 [生命周期]()
+
+https://www.jianshu.com/p/f6d771421eb9
