@@ -27,3 +27,5 @@
 [生命周期]()
 
 https://www.jianshu.com/p/f6d771421eb9
+
+[深入 wepy 小程序组件化框架](https://toutiao.io/posts/zvnb1h/preview)

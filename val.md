@@ -54,3 +54,13 @@ prevPage.setData({
   mydata: {a:1, b:2}
 
 ```
+
+### 传值
+```
+<view data-index="{{index}}" bindtap="delete"><image src="../../../images/icon_delete.png" /><text>删除</text></view>
+
+delete: function (e) {
+  var index = parseInt(e.currentTarget.dataset.index);
+  console.log("index" + index);
+}
+```

@@ -5,4 +5,6 @@
 * [plugin](plugin.md)
 * [server](server.md)
 * [val](val.md)
+* [tag](tag.md)
+* [hole](hole.md)
 
