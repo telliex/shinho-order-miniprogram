@@ -24,8 +24,8 @@
 体验者：添加为体验者，管理员发布体验版本后，通过扫码二维码可以下载体验版小程序，最多20个人，添加人后是可以删除的
 
 [API请求](https://developers.weixin.qq.com/miniprogram/dev/api/network-request.html)
-[生命周期]()
+[生命周期](https://blog.csdn.net/qq_26585943/article/details/54407202)
 
-https://www.jianshu.com/p/f6d771421eb9
+[scrollview](https://www.jianshu.com/p/f6d771421eb9)
 
 [深入 wepy 小程序组件化框架](https://toutiao.io/posts/zvnb1h/preview)
