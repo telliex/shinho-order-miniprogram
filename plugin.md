@@ -23,3 +23,5 @@
 * [仿coco点餐系统的微信小程序](https://github.com/lpbird/imitate-coco-xcx)
 * [生命周期](https://www.jianshu.com/p/0078507e14d3)
 
+[JavaScript 数字前补“0”的五种方法](https://blog.csdn.net/chy555chy/article/details/62886715)
+

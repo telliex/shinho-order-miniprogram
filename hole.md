@@ -70,5 +70,14 @@ onLoad: function(options) {
       }]
     });
   }
-
 ```
+
+* this.$parent 更改没反应
+
+需要多加
+```
+this.$parent.$apply();
+```
+
+* component 可以使用 parent 的 usingComponents ，若是跳转的页面及无法
+ 
