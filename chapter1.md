@@ -96,3 +96,6 @@ https://hacpai.com/article/1523346638650
 * 建议在子项中通过设置flex-basis的方式去设置想要的尺寸，而不是设置width
 * 缩写flex:auto(flex: 1 1 auto)，flex:none(0 0 auto)，flex:1(1 1 0%)
 * 若想某项不参与弹性布局的计算，应将其设置成flex:none
+
+## 参考
+[Wepy](https://www.w3cschool.cn/qdwzc/qdwzc-t35y25tu.html)
