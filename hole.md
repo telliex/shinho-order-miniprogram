@@ -85,3 +85,7 @@ this.$parent.$apply();
 
  
 * 微信小程序的网络请求必须走Https协议，就是说微信小程序一定要通过HTTPS加密。 
+
+* page 呼叫 global => this.$parent;
+
+* page里的子组件呼叫 global => this.$root.$parent;
