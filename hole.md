@@ -82,4 +82,6 @@ this.$parent.$apply();
 * component 可以使用 parent 的 usingComponents ，若是跳转的页面及无法
 
 * 若 onLoad()因为是组件在近画面时已被加载，可加入 `this.$apply()` 帮助进画面时重新渲染
+
  
+* 微信小程序的网络请求必须走Https协议，就是说微信小程序一定要通过HTTPS加密。 
