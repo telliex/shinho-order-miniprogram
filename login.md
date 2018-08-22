@@ -29,4 +29,42 @@ wx.login({
 | js_code | 前面调用wx.login派发的code |
 | grant_type |'authorization_code' |
 
+3. 服务器使用不可逆的哈希算法，比如md5、sha1等生成 skey 给前端，并在前端维护这份登录态标识 (一般是存入 storage )
 
+session_key获取的流程
+
+（1）注册微信小程序、登录后台在设置中获得 appId 和 secret (密钥)
+（2）调用 wx.login() 接口获取登录凭证 js_code
+（3）调用 wx.request() 接口把js_code发送到服务器后台
+（4）在服务器后台，已知 appId、secret、js_code
+然后调用如下官方提供的http接口，即可返回获取openId、session_key
+
+官方提供了http接口地址为：
+https://api.weixin.qq.com/sns/jscode2session?appid=APPID&secret=SECRET&js_code=JSCODE&grant_type=authorization_code
+
+
+4. 如果当前 session_key 过期，就让用户来重新登录，更新 session_key，并将最新的 skey 存入用户数据表中。
+
+![](https://files.jb51.net/file_images/article/201804/20184984837214.png?20183984849)
+
+```
+let loginFlag = wx.getStorageSync('skey');
+if (loginFlag) {
+ // 检查 session_key 是否过期
+ wx.checkSession({
+ // session_key 有效(未过期)
+ success: function() {
+  // 业务逻辑处理
+ },
+  
+ // session_key 过期
+ fail: function() {
+  // session_key过期，重新登录
+  doLogin();
+ }
+ });
+) else {
+ // 无skey，作为首次登录
+ doLogin();
+}
+```

@@ -1,4 +1,15 @@
+## 开发准备工作
+1. 登录 https://mp.weixin.qq.com ，就可以在网站的“设置”-“开发者设置”中，查看到微信小程序的 AppID 了，注意不可直接使用服务号或订阅号的 AppID 。 
+
+2. 下载开发工具
+[下载地址](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html?t=1476197489869)
+
+3. 建立项目
+开发者工具安装完成后，打开并使用微信扫码登录。选择创建“项目”，填入上面步骤获取到的 AppID ，设置一个本地项目的名称（非小程序名称）
+
 # My Awesome Book
+
+小程序后台登录网址：https://mp.weixin.qq.com/
 
 
 [微信小程序基础：天气应用?](https://classroom.udacity.com/courses/ud666-cn-1)
