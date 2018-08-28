@@ -89,3 +89,6 @@ this.$parent.$apply();
 * page 呼叫 global => this.$parent;
 
 * page里的子组件呼叫 global => this.$root.$parent;
+
+
+[浮点数计算 bug](https://blog.csdn.net/helloxiaoliang/article/details/72723387)

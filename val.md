@@ -14,7 +14,7 @@ props: {
 
 // 源页面A相关代码
 wx.navigateTo({
-  url: "/pages/mypage/mypage?a=1&b=2"
+  url: "/pages/mypage/mypage?a=JSON.stringify(1)&b=JSON.stringify(2)"
 })
  
 // 目标页面B相关代码
