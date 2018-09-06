@@ -95,3 +95,14 @@ this.$parent.$apply();
 [仿 cookie](https://www.csweigou.com/article/2143.html)
 
 [图标字体](https://www.jianshu.com/p/85317465e662)
+
+* 抓取 DOM
+```
+  that.$apply();
+  var query = wx.createSelectorQuery();
+  query.select('.aslide-item-info').boundingClientRect();
+  query.exec(function(res) {
+    console.log(res);
+  that.boxHeight = res[0].height;
+  });
+```
