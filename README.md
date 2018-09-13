@@ -40,7 +40,7 @@
 [scrollview](https://www.jianshu.com/p/f6d771421eb9)
 
 [深入 wepy 小程序组件化框架](https://toutiao.io/posts/zvnb1h/preview)
-[深入wepy小程序组件化框架](https://imhjm.com/article/5977ebab7dd03248a2e8d57f)
+[深入 wepy 小程序组件化框架](https://imhjm.com/article/5977ebab7dd03248a2e8d57f)
 [Icon-font图标字体的四类制作方法](https://www.jianshu.com/p/095eb298ed18)
 
 icon lib
