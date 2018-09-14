@@ -1,0 +1,1 @@
+[微信小程序 res =>的意义及userInfoReadyCallback函数的作用](https://blog.csdn.net/zjw_python/article/details/80641963)
