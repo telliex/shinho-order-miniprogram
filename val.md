@@ -1,3 +1,5 @@
+# 小程序传值
+
 ### 父子组件传值通信
 
 ```
@@ -9,7 +11,7 @@ props: {
   }
 ```
 
-一个页面转到另一个页面，一般情况下可以通过navigate或redirect时候的url来携带参数，方式只有在目标页面还没有创建的时候，才有效。因为一个页面的onLoad方法在页面的生命周期中，只执行一次。
+一个页面转到另一个页面，一般情况下可以通过 navigate 或 redirect 时候的url来携带参数，方式只有在目标页面还没有创建的时候，才有效。因为一个页面的onLoad方法在页面的生命周期中，只执行一次。
 ```
 
 // 源页面A相关代码
@@ -26,9 +28,9 @@ Page({
 
 ```
 
-### 方法1：使用全局数据存储
+### 使用全局数据存储
 ```
-//=== 1. 存储到app对象上的方式 ========
+//=== 1. 存储到 app 对象上的方式 ========
 var app = getApp()
 app.globalData.mydata = {a:1, b:2};  //存储数据到app对象上
 wx.navigateBack();  //返回上一个页面
@@ -41,7 +43,8 @@ wx.setStorage({
     wx.navigateBack();   //返回上一个页面
   }
 ```
-### 从页面路由栈中直接获取和操作目标Page对象
+### 从页面路由栈中直接获取和操作目标 Page 对象
+可操作上一页面的 function 
 
 ```
 
@@ -49,13 +52,13 @@ var pages = getCurrentPages();
 var currPage = pages[pages.length - 1];   //当前页面
 var prevPage = pages[pages.length - 2];  //上一个页面
  
-//直接调用上一个页面的setData()方法，把数据存到上一个页面中去
+//直接调用上一个页面的 setData() 方法，把数据存到上一个页面中去
 prevPage.setData({
   mydata: {a:1, b:2}
 
 ```
 
-### 传值
+### 动作触发传值
 ```
 <view data-index="{{index}}" bindtap="delete"><image src="../../../images/icon_delete.png" /><text>删除</text></view>
 

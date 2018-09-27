@@ -1,14 +1,14 @@
 # WePY
 
 
-WePY的安装或更新都通过npm进行。
+WePY 的安装或更新都通过 npm 进行。
 
 全局安装或更新WePY命令行工具
 ```
 npm install wepy-cli -g
 ```
 
-在开发目录中生成Demo开发项目
+在开发目录中生成 Demo 开发项目
 ```
 wepy init standard my-project
 ```
@@ -31,8 +31,7 @@ wepy build --watch
 
 
 
-1. 小程序重新定义了DOM结构，没有window、document、div、span等，小程序只有view、text、image等 封装好的组件
-2. 小程序没有cookie，只能通过storage来模拟各项cookie操作（包括http中的setCookie也需要自行处理）
+
 
 wepy框架
 
@@ -98,4 +97,9 @@ https://hacpai.com/article/1523346638650
 * 若想某项不参与弹性布局的计算，应将其设置成flex:none
 
 ## 参考
-[Wepy](https://www.w3cschool.cn/qdwzc/qdwzc-t35y25tu.html)
+* [Wepy](https://www.w3cschool.cn/qdwzc/qdwzc-t35y25tu.html)
+* [深入 wepy 小程序组件化框架](https://toutiao.io/posts/zvnb1h/preview)
+* [深入 wepy 小程序组件化框架](https://imhjm.com/article/5977ebab7dd03248a2e8d57f)
+
+
+

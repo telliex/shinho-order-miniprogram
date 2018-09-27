@@ -1,14 +1,9 @@
-
+# 小程序插件
 
 附上自定的 i-class-alone 即可覆盖 css
 
 [wepy-com-toast]
 
-### 小程序渲染对应环境
-
-* ISO -> JavascriptCore
-* android -> X5 内核
-* IED -> nwjs
 
 
 * [iView Weapp](https://weapp.iviewui.com/) UI组件库 
@@ -34,5 +29,8 @@
 [Zent](https://youzan.github.io/zent/zh/guides/install)  PC 端 - WebUI 规范的 React 实现
 [iView Weapp](https://weapp.iviewui.com/)
 
-[textarea 坑](http://www.wxapp-union.com/forum.php?mod=viewthread&tid=3270)
+
+
+
+[scrollview](https://www.jianshu.com/p/f6d771421eb9)
 

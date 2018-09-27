@@ -1,3 +1,4 @@
+# 小程序登入流程
 
 ![微信](https://files.jb51.net/file_images/article/201804/20184984148499.jpg?20183984355)
 
@@ -12,7 +13,7 @@ wx.login({
   }
 });
 
-
+// 回传
 {errMsg: "login:ok", code: "002osFfj0FOKJn1PFDij0JoDfj0osFfB"}
 
 ```

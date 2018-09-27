@@ -29,21 +29,22 @@
     * 体验者：添加为体验者，管理员发布体验版本后，通过扫码二维码可以下载体验版小程序，最多20个人，添加人后是可以删除的
 
 
+### 关于小程序
+
+1. 小程序重新定义了DOM结构，没有 window、document、div、span等，小程序只有view、text、image等 封装好的组件
+2. 小程序没有cookie，只能通过storage来模拟各项cookie操作（包括http中的setCookie也需要自行处理）
+
+#### 小程序渲染对应环境
+
+* ISO -> JavascriptCore
+* android -> X5 内核
+* IED -> nwjs
+
+所以三个环境里的表现会不一样，勿依赖开发环境的正确结果。
+
 
 [scrollview](https://www.jianshu.com/p/f6d771421eb9)
 
-[深入 wepy 小程序组件化框架](https://toutiao.io/posts/zvnb1h/preview)
-[深入 wepy 小程序组件化框架](https://imhjm.com/article/5977ebab7dd03248a2e8d57f)
-[Icon-font图标字体的四类制作方法](https://www.jianshu.com/p/095eb298ed18)
 
 
 
-
-资源压缩
-
-大部分资源都可以进行适当压缩，常常可以在保证功能体验的同时，有效地减少空间占用。参考工具：
-
-js压缩: 配置wepy-plugin-uglifyjs插件
-json、wxml压缩： 配置wepy-plugin-filemin插件
-less压缩： 配置wepy-compiler-less插件
-图片压缩： 配置wepy-plugin-imagemin插件、TinyPNG
