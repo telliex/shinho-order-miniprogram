@@ -29,77 +29,25 @@ wepy build --watch
 ```
 
 
-
-
-
-
-wepy框架
-
-## IDE 编辑器下，wepy 代码的高亮 
-
-在插件目录搜索安装 vetur，或者 vue，点击 VS Code 右下角的语言，选择 “.wpy” 的配置文件关联，然后选择 Vue，即可启动代码高亮。
-
-
-
-坑
-1. WePY中的methods属性只能声明页面wxml标签的bind、catch事件，不能声明自定义方法，这与Vue中的用法是不一致的。普通自定义方法在methods对象外声明，与methods平级。
-2. 变量与方法尽量使用驼峰式命名，并且注意避免使用$开头。 以$开头的标识符为WePY框架的内建属性和方法，
-3. 原 bindtap="click" 替换为 @tap="click"，原catchtap="click"替换为@tap.stop="click"。原 capture-bind:tap="click" 替换为 @tap.capture="click"，原capture-catch:tap="click"替换为@tap.capture.stop="click"。
+## 使用 wepy 框架开发，注意事项
+1. WePY 中的 methods 属性只能声明页面 wxml 标签的bind、catch事件，不能声明自定义方法，这与Vue中的用法是不一致的。普通自定义方法在 methods 对象外声明，与 methods 平级。
+2. 变量与方法尽量使用驼峰式命名，并且注意避免使用 $ 开头。 以 $ 开头的标识符为WePY 框架的内建属性和方法，
+3. 原 bindtap="click" 替换为 @tap="click"，原 catchtap="click"替换为@tap.stop="click"。原 capture-bind:tap="click" 替换为 @tap.capture="click"，原capture-catch:tap="click"替换为@tap.capture.stop="click"。
 4. 事件传参使用优化后语法代替。 原bindtap="click" data-index={{index}}替换为@tap="click({{index}})"。
-5. WePY中，在父组件template模板部分插入驼峰式命名的子组件标签时，不能将驼峰式命名转换成短横杆式命名(比如将childCom转换成child-com)，这与Vue中的习惯是不一致。
-6. 
+5. WePY 中，在父组件 template 模板部分插入驼峰式命名的子组件标签时，不能将驼峰式命名转换成短横杆式命名(比如将 childCom 转换成 child-com )，这与 Vue 中的习惯是不一致。
+6. 使用方法 
 ```
 <repeat for="{{list}}" key="index" index="index" item="item">
-        <!-- 插入<script>脚本部分所声明的child组件，同时传入item -->
-        <child :item="item"></child>
-    </repeat>
+  <!-- 插入<script>脚本部分所声明的child组件，同时传入item -->
+  <child :item="item"></child>
+</repeat>
 ```
-
-
-https://hacpai.com/article/1523346638650
-
-
-
-[微信小程序优秀开发资源汇总](https://juejin.im/entry/5a9dfb9b5188255568683d3c)
-[微信小程序常见的UI框架/组件库总结](https://www.jianshu.com/p/429529867818)
-[全网最全的小程序学习资料和文章，看这篇就够了](https://www.jianshu.com/p/965aa85debd1)
-
-
-
-### 标签
-```
- <block wx:if="{{item.type == 'SWIPER'}}">
-    <SwiperBar />
- </block>
-```
-
-```
- <repeat for="{{components}}" key="index" index="index" item="item">
-    <SwiperBar />
- </repeat>
-```
-
-### 小程序原生 
-```
-<view class='cart-list-box' wx:for="{{cartList}}" wx:key="unique" wx:for-item="items" wx:for-index="indexs">
-```
-
-
-
-
-
-
-* 当值默认为auto时，以此元素设置的尺寸为准，若也是auto，则以内容content尺寸为准
-* 当flex-basis设置了值时，以此设置尺寸的为准
-* 若为百分比，则根据父容器进行计算。若为0%，则其设置的width将无效。
-* 建议在子项中通过设置flex-basis的方式去设置想要的尺寸，而不是设置width
-* 缩写flex:auto(flex: 1 1 auto)，flex:none(0 0 auto)，flex:1(1 1 0%)
-* 若想某项不参与弹性布局的计算，应将其设置成flex:none
 
 ## 参考
 * [Wepy](https://www.w3cschool.cn/qdwzc/qdwzc-t35y25tu.html)
 * [深入 wepy 小程序组件化框架](https://toutiao.io/posts/zvnb1h/preview)
 * [深入 wepy 小程序组件化框架](https://imhjm.com/article/5977ebab7dd03248a2e8d57f)
+* [Wepy 坑](https://hacpai.com/article/1523346638650)
 
 
 

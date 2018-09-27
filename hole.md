@@ -93,7 +93,12 @@ this.$parent.$apply();
 
 #### 10. 价钱的加减乘除会有出现浮点数，如 12.0000000000001
 解法:
-[浮点数计算 bug](https://blog.csdn.net/helloxiaoliang/article/details/72723387)
+* [浮点数计算 bug](https://blog.csdn.net/helloxiaoliang/article/details/72723387)
+* [JavaScript 数字前补“0”的五种方法](https://blog.csdn.net/chy555chy/article/details/62886715)
+
+
+
+
 
 #### 11. 如何让小程序有类似 cookie 功能
 解法:

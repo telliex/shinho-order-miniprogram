@@ -18,3 +18,25 @@
   </swiper-item>
 </block>
 ```
+
+```
+<block wx:if="{{item.type == 'SWIPER'}}">
+<SwiperBar />
+</block>
+```
+
+```
+<repeat for="{{components}}" key="index" index="index" item="item">
+<SwiperBar />
+</repeat>
+```
+
+```
+<view class='cart-list-box' wx:for="{{cartList}}" wx:key="unique" wx:for-item="items" wx:for-index="indexs">
+```
+
+
+
+
+
+
