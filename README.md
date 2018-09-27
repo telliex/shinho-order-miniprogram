@@ -3,7 +3,7 @@
 1. Wepy （开发框架）
 2. iview weapp (UI 库)
 3. zanui weapp (UI 库)
-4. * [easy-mock](https://easy-mock.com/) 创建 API ，在后端完成 API 可先套用。
+4. [easy-mock](https://easy-mock.com/) 创建 API ，在后端完成 API 可先套用。
 
 
 ## 开发准备工作
