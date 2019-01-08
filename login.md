@@ -44,7 +44,7 @@ session\_key获取的流程
 
 1. 如果当前 session\_key 过期，就让用户来重新登录，更新 session\_key，并将最新的 skey 存入用户数据表中。
 
-![](/assets/20184984837214 %281%29.png)
+![](/assets/20184984837214.png)
 
 ```
 let loginFlag = wx.getStorageSync('skey');
